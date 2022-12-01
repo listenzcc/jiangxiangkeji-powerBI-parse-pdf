@@ -1,5 +1,7 @@
 # 从财报看股票
 
+Page: [jiangxiangkeji](https://listenzcc.github.io/jiangxiangkeji-powerBI-parse-pdf "jiangxiangkeji")
+
 本文从下载的 AP7 的财报出发，首先使用 Power BI 解析 PDF 文件，之后利用 Power BI 进行可视化分析。
 
 从分析中可以看出，对于 AP7 来说，宝岛的投资价值无论从数量和质量来说，都是高于大陆的，可能很多西方国家也都这么想吧。
@@ -58,14 +60,14 @@ PDF文档样例
 
 由于原表格是瑞典语的，因此将它们的英文对照列写如下，也就是说我们能够从数据中得到 AP7 所购买的每支股票或债券的货币（Valuta）、证券名（Värdepapper）、市值（Marknadsvärde）及其盈亏（Orealiserat resultat）。
 
-| Sweden | English |
-| --- | --- |
-| Marknadsvärde | Market commodity |
-| Kurs | (Exchange) rate |
+| Sweden               | English             |
+| -------------------- | ------------------- |
+| Marknadsvärde        | Market commodity    |
+| Kurs                 | (Exchange) rate     |
 | Orealiserat resultat | Unrealized earnings |
-| Andel av fond | Share of fund |
-| Valuta | Currency |
-| Värdepapper | Securities |
+| Andel av fond        | Share of fund       |
+| Valuta               | Currency            |
+| Värdepapper          | Securities          |
 
 首先，各种货币的市值（本文的“市值”是指 AP7 购买的该公司股票的量，而不是公司体量）和盈亏情况如图所示。下面两张图分别是是否将美元纳入统计的结果，这代表 AP7 的主要投资去向是美国，因此也难怪美国公司的收购案会受到他们的关注。
 
@@ -97,25 +99,25 @@ USD
 
 Detail-1
 
-| Order | EN | CN |
-| --- | --- | --- |
-| 1 | KWD | 科威特第纳尔 |
-| 2 | ILS | 以色列谢克尔 |
-| 3 | USD | 美元 |
-| 4 | AED | 阿联酋迪拉姆 |
-| 5 | CAD | 加拿大元 |
-| 6 | NZD | 新西兰元 |
-| 7 | TWD | 新台币 |
-| 8 | CZK | 捷克克朗 |
-| 9 | CHF | 瑞士法郎 |
-| 10 | SAR | 沙特里亚尔 |
-| 11 | DKK | 丹麦克朗 |
-| 12 | QAR | 卡塔尔里亚尔 |
-| 13 | NOK | 挪威克朗 |
-| 14 | INR | 印度卢比 |
-| 15 | SGD | 新加坡元 |
-| 16 | AUD | 澳大利亚元 |
-| 17 | CNY | 人民币 |
+| Order | EN  | CN           |
+| ----- | --- | ------------ |
+| 1     | KWD | 科威特第纳尔 |
+| 2     | ILS | 以色列谢克尔 |
+| 3     | USD | 美元         |
+| 4     | AED | 阿联酋迪拉姆 |
+| 5     | CAD | 加拿大元     |
+| 6     | NZD | 新西兰元     |
+| 7     | TWD | 新台币       |
+| 8     | CZK | 捷克克朗     |
+| 9     | CHF | 瑞士法郎     |
+| 10    | SAR | 沙特里亚尔   |
+| 11    | DKK | 丹麦克朗     |
+| 12    | QAR | 卡塔尔里亚尔 |
+| 13    | NOK | 挪威克朗     |
+| 14    | INR | 印度卢比     |
+| 15    | SGD | 新加坡元     |
+| 16    | AUD | 澳大利亚元   |
+| 17    | CNY | 人民币       |
 
 最后，我按照投资的证券数量（大小）、投资价值总量（纵轴）和投资的收益率（横轴）进行绘图，只选择了两个指标均高于人民币的币种。看来对于 AP7 来说，宝岛的投资价值无论从数量和质量来说，都是高于大陆的，可能很多西方国家也都这么想吧。
 
